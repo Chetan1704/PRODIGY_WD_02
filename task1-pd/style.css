@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background: #7be87b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.clockouter{
+    width: 100%;
+    max-width: 350px;
+    height: 60px;
+    background: white;
+    border-radius: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.935);
+    position: relative;
+    margin-bottom: 60px;
+    
+}
+.clockouter::after{
+    content: "";
+    width: 100%;
+    height:10px;
+    background: rgba(0, 0, 0, 0.546);
+    position: absolute;
+    border-radius: 10px;
+    filter: blur(5px);
+   bottom: -20px;
+   left: 0;
+}
+.dot{
+    content: "";
+    width: 40px;
+    height: 15px;
+    background: black;
+    position: absolute;
+    border-radius: 5px 5px 0 0 ;
+    top: -15px;
+    right: 30px;
+}
+.clock{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    border: none;
+    cursor: none;
+    
+}
+
+.time{
+    width: 100%;
+    height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px; 
+
+}
+.btnbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+button{
+    width: 150px;
+    height: 35px;   
+    overflow: hidden;
+    border: none;
+    border-radius: 5px;
+}
+button:hover h1{
+    transform: translateY(-30px);
+    transition: 0.5s all ease-in-out;
+}
+.result{
+    font-size: 20px;
+    margin-bottom: 20px;
+    cursor: none;
+}
+
+
+.clock::after{
+    content: "";
+    height: 10px;
+    width: 80px;
+    background: black;
+    position: absolute;
+    bottom: -15px;
+    left: 20px;
+    border-radius: 5px;
+}
+.clock::before{
+    content: "";
+    height: 10px;
+    width: 80px;
+    background: black;
+    position: absolute;
+    bottom: -15px;
+    right: 20px;
+    border-radius: 5px;
+}
